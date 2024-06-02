@@ -1,0 +1,828 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Klee+One&display=swap');
+
+body{
+    font-family: Klee One,sans-serif;
+}
+.navbar{
+position: absolute;
+left: 200px;
+top:5px;
+margin-top: 30px;
+display: flex;
+justify-content: space-around;
+
+}
+.nav{
+    position: relative;
+    width: 1000px;
+    height: 50px;
+    margin-top: 0px;
+    margin-bottom: 40px;
+}
+.nav-left{
+    display: flex;
+
+    list-style: none;
+   
+}
+.nav-left>li{
+    text-align: center;
+    justify-content: center;
+    margin-right: 10px;
+    
+}
+.nav-left>li>a{
+    text-decoration:none;
+    color: black;
+    
+}
+
+.download-btn{
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px;
+    margin-left: 150px;
+}
+.download-btn:hover{
+    cursor: pointer;
+}
+.brand{
+    font-weight: 800;
+    font-size: larger;
+    margin-right: 15px;
+}
+.icon {
+    width: 25px;
+    height: 35px;
+    background-image: url('src/Ellipse.png'), url('src/Vector.png');
+    background-size: 25%, 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 10px;
+    display: inline-block; 
+}
+.star1 {
+    height:120px;
+    width: 120px;
+    background-image: url('src/star.png');
+    background-size: 25%, 100%;
+    background-repeat: no-repeat;
+    background-position: cover;
+    margin-right: 10px;
+    position:absolute;
+    top:70px;
+    right:30px;
+}
+
+.merged-ellipses {
+    position: relative;
+    width: 400px; 
+    height: 300px; 
+    z-index: 0;
+}
+
+.ellipse-top, .ellipse-bottom {
+    position: absolute;
+    width: 90%; 
+    height: 200px; 
+    z-index: 0;
+}
+
+.ellipse-top {
+    top: 0;
+}
+
+.ellipse-bottom {
+    top: 20%; 
+}
+.merged-ellipses>h1{
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    z-index: 2;
+}
+.merged-ellipses>p{
+    position: absolute;
+    top: 150px;
+    width: 100%;
+    z-index: 2;
+}
+.action-btn{
+    position: absolute;
+    top:250px;
+}
+.header-btn{
+  position: relative;
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 45px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: rgb(0, 0, 0); 
+  color: white; 
+}
+.header-btn:hover{
+    cursor: pointer;
+}
+.header-btn>img{
+position: absolute;
+top:2px;
+margin-left: 5px;
+
+}
+span>.play{
+  position: relative;
+  top:7px;
+  margin-left: 10px;
+}
+span>.play:hover{
+    cursor: pointer;
+}
+.color-ellipse{
+    position: absolute;
+    top:150px;
+    right: 60px;
+    width: 400px; 
+    height: 400px; 
+    z-index: 0;
+}
+.ellipse-container {
+    position: relative;
+    width: 383.17px;
+    height: 800px; 
+}
+
+.ellipse {
+    box-sizing: border-box;
+    position: absolute;
+    width: 383.17px;
+    height: 200px; 
+    border: 1px solid #000;
+    border-radius: 50%; 
+    transform: rotate(45deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Clash Display', sans-serif;
+}
+
+.ellipse-1 {
+    
+    top: 0px;
+    z-index: 1;
+}
+
+.ellipse-2 {
+    
+    top: 50px; 
+    z-index: 2;
+}
+
+.ellipse-3 {
+    
+    top: 100px; 
+    z-index: 3;
+}
+
+.merged-ellipse-container {
+    position: relative;
+    bottom:970px;
+    right:150px;
+    width: 200px; 
+    height: 400px; 
+    transform: rotate(-25deg);
+    z-index: 10;
+}
+
+.merged-ellipse {
+    width: 300px; 
+    height: 350px; 
+    border-radius: 50% / 100%; 
+    border: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.merged-ellipse-1 {
+    background-image: url('src/iPhone.png'); 
+    top: 150px;
+    left: 125px; 
+    z-index: 3;
+}
+
+.merged-ellipse-2 {
+    background-image: url('src/iPhone2.png'); 
+    top: 250px; 
+    left: 100px; 
+    z-index: 2;
+}
+
+.merged-ellipse-3 {
+    background-image: url('src/iPhone3.png'); 
+    top: 350px; 
+    left: 75px; 
+    z-index: 1;
+}
+
+
+.ellipse-content {
+    transform: rotate(30deg); 
+    color: black;
+    font-family: 'Clash Display', sans-serif;
+    text-align: center;
+}
+.header-right{
+    position: absolute;
+    top: 150px;
+    left:480px;
+}
+.header-left{
+    position: absolute;
+    left: 200px;
+}
+.star2{
+    height:120px;
+    width: 120px;
+    background-image: url('src/star.png');
+    background-size: 25%, 100%;
+    background-repeat: no-repeat;
+    background-position: cover;
+    margin-right: 10px;
+    position:absolute;
+    top:340px;
+    right:220px;
+}
+.star3{
+    height:120px;
+    width: 120px;
+    background-image: url('src/star.png');
+    background-size: 25%, 100%;
+    background-repeat: no-repeat;
+    background-position: cover;
+    margin-right: 10px;
+    position:absolute;
+    top:300px;
+    right:220px;
+}
+.z-content{
+    height: 300px;
+    width: 350px;
+    position: absolute;
+    top:300px;
+
+}
+
+.container{
+    position: absolute;
+    left:0px;
+    top: 300px;
+    right:400px;
+}
+
+
+  .ring {
+    position: absolute;
+    top: 0px;
+    border-radius: 50%; 
+   
+    transform: rotate(45deg); 
+    z-index: 2; 
+  }
+
+  .ring-1 {
+    width: 300px;
+    height: 450px;
+    border: 1px solid rgb(0, 0, 0); 
+    top: 0px;
+    left: 110px;
+  }
+
+  .ring-2 {
+    width: 300px;
+    height: 450px;
+    border: 1px solid rgb(0, 0, 0); 
+    top: 0px;
+    left: 78px;
+  }
+
+  .ring-3 {
+    width: 300px;
+    height: 450px;
+    border: 1px solid rgb(0, 0, 0); 
+    top: 0px;
+    left: 46px;
+  }
+  .rings{
+    position: absolute;
+    top: 200px;
+    right:500px;
+    
+  }
+.screen{
+    position:absolute;
+    top: 160px;
+   right:170px;
+    
+}
+.image{
+    z-index: 5;
+}
+.content{
+    position: absolute;
+    top:500px;
+    left: 50px;
+}
+
+.color {
+    position:absolute;
+    top:600px;
+    left:100px;
+    width: 400px; 
+    height: 300px; 
+    z-index: 0;
+}
+
+.red, .yellow {
+    position: absolute;
+    
+    width: 90%; 
+    height: 200px; 
+    z-index: 0;
+}
+
+.red {
+    top: 0;
+}
+
+.yellow{
+    top: 20%; 
+}
+.colors {
+    position:absolute;
+    top:600px;
+    right: 700px;
+    width: 5cm; 
+    height: 300px; 
+    z-index: 0;
+}
+
+.redColor, .yellowColor {
+    position: absolute;
+    
+    width: 90%; 
+    height: 200px; 
+    z-index: 8;
+}
+
+.redColor {
+    top: 0;
+}
+
+.yellowColor{
+    top: 20%; 
+}
+.star4{
+    height:120px;
+    width: 120px;
+    background-image: url('src/star.png');
+    background-size: 25%, 100%;
+    background-repeat: no-repeat;
+    background-position: cover;
+    margin-right: 10px;
+    position:absolute;
+    top:500px;
+    right:700px;
+}
+.advantage-content{
+    width:300px;
+    position: absolute;
+    top:1300px;
+    left:200px;
+}
+
+
+
+.advantage-container{
+    position: absolute; 
+    left:0px;
+    top: 300px;
+    right:400px;
+}
+
+.parent{
+    position: relative;
+    width: 500px;
+}
+  .ad-rings {
+    position: absolute;
+    top: 0px;
+    border-radius: 50%; 
+   
+    transform: rotate(45deg); 
+    z-index: 2; 
+  }
+
+  .ring-11{
+    width: 300px;
+    height: 450px;
+    border: 1px solid rgb(0, 0, 0); 
+    top: 0px;
+    left: 110px;
+  }
+
+  .ring-22 {
+    width: 300px;
+    height: 450px;
+    border: 1px solid rgb(0, 0, 0); 
+    top: 0px;
+    left: 78px;
+  }
+
+  .ring-33 {
+    width: 300px;
+    height: 450px;
+    border: 1px solid rgb(0, 0, 0); 
+    top: 0px;
+    left: 46px;
+  }
+  .a-rings{
+    position: absolute;
+    top: 1000px;
+    right:0px;
+    left: 550px;
+    
+  }
+.a-image{
+    position:absolute;
+    top: 950px;
+   left: 600px;
+    
+}
+.img{
+    z-index: 5;
+}
+.onhold{
+    position: absolute;
+    top: 1150px;
+    left: 770px;
+    z-index: 15;
+}
+.star5{
+    height:120px;
+    width: 120px;
+    background-image: url('src/star.png');
+    background-size: 25%, 100%;
+    background-repeat: no-repeat;
+    background-position: cover;
+    margin-right: 10px;
+    position:absolute;
+    top:1000px;
+    right:150px;
+}
+
+
+.design {
+    position:absolute;
+    top:1100px;
+    right: 0px;
+    left: 800px;
+    width: 7cm; 
+    height: 300px; 
+    z-index: 0;
+}
+
+.reddesign, .yellowdesign {
+    position: absolute;
+    
+    width: 90%; 
+    height: 200px; 
+    z-index: 8;
+}
+
+.reddesign {
+    top: 0;
+}
+
+.yellowdesign{
+    top: 20%; 
+}
+.customize-iphone{
+    position: absolute;
+    left:0px;
+    top: 850px;
+    right: 700px;
+    
+}
+
+.s-parent{
+    position: relative;
+    width: 500px;
+    right:150px;
+}
+  .cu-rings {
+    position: absolute;
+    top: 0px;
+    border-radius: 50%; 
+   
+    transform: rotate(45deg); 
+    z-index: 2; 
+  }
+
+  .ring-111{
+    width: 300px;
+    height: 450px;
+    border: 1px solid rgb(0, 0, 0); 
+    top: 0px;
+    left: 110px;
+  }
+
+  .ring-222{
+    width: 300px;
+    height: 450px;
+    border: 1px solid rgb(0, 0, 0); 
+    top: 0px;
+    left: 78px;
+  }
+
+  .ring-333 {
+    width: 300px;
+    height: 450px;
+    border: 1px solid rgb(0, 0, 0); 
+    top: 0px;
+    left: 46px;
+  }
+  .c-rings{
+    position: absolute;
+    top: 1000px;
+    right: 200px;
+    
+  }
+.c-image{
+    position:absolute;
+    top: 950px;
+   right: 0px;
+   left: 200px;
+    
+}
+.custum{
+    z-index: 5;
+}
+.card{
+    position: absolute;
+    top: 1100px;
+    left: 270px;
+    z-index: 15;
+}
+.star6{
+    height:120px;
+    width: 120px;
+    background-image: url('src/star.png');
+    background-size: 25%, 100%;
+    background-repeat: no-repeat;
+    background-position: cover;
+    margin-right: 10px;
+    position:absolute;
+    top:1000px;
+    right:50px;
+}
+.design1 {
+    position:absolute;
+    top:1100px;
+    right: 0px;
+    left: 200px;
+    width: 15cm; 
+    height: 300px; 
+    z-index: 0;
+}
+
+.reddesign1, .yellowdesign1 {
+    position: absolute;
+    
+    width: 90%; 
+    height: 200px; 
+    z-index: 8;
+}
+
+.reddesign1 {
+    top: 0;
+}
+
+.yellowdesign1{
+    top: 20%; 
+}
+.customize-content{
+    position: absolute;
+    top: 2000px;
+    left:650px;
+    width:400px;
+}
+.people{
+    position: absolute;
+    left:0px;
+    top: 1500px;
+    right:800px;
+}
+.t-parent{
+    position: relative;
+    width: 500px;
+}
+
+  .pe-rings {
+    position: absolute;
+    top: 0px;
+    border-radius: 50%; 
+   
+    transform: rotate(45deg); 
+    z-index: 2; 
+  }
+
+  .ring-1111{
+    width: 300px;
+    height: 450px;
+    border: 1px solid rgb(0, 0, 0); 
+    top: 0px;
+    left: 110px;
+  }
+
+  .ring-2222{
+    width: 300px;
+    height: 450px;
+    border: 1px solid rgb(0, 0, 0); 
+    top: 0px;
+    left: 78px;
+  }
+
+  .ring-3333 {
+    width: 300px;
+    height: 450px;
+    border: 1px solid rgb(0, 0, 0); 
+    top: 0px;
+    left: 46px;
+  }
+  .p-rings{
+    position: absolute;
+    top: 1000px;
+    right:350px;
+    
+  }
+.p-image{
+    position:absolute;
+    top: 1000px;
+   right: 0px;
+   left: 150px;
+
+    
+}
+.pe-img{
+    z-index: 5;
+    width: 550px;
+}
+.pe-class{
+    position: absolute;
+    top: 1300px;
+    left: 750px;
+    z-index: 15;
+}
+.star7{
+    height:120px;
+    width: 120px;
+    background-image: url('src/star.png');
+    background-size: 25%, 100%;
+    background-repeat: no-repeat;
+    background-position: cover;
+    margin-right: 10px;
+    position:absolute;
+    top:1000px;
+    right:50px;
+    left: 800px;
+}
+
+
+.design2 {
+    position:absolute;
+    top:1100px;
+    right: 0px;
+    left: 200px;
+    width: 15cm; 
+    height: 300px; 
+    z-index: 0;
+}
+
+.reddesign2, .yellowdesign2 {
+    position: absolute;
+    
+    width: 90%; 
+    height: 200px; 
+    z-index: 8;
+}
+
+.reddesign2 {
+    top: 0;
+}
+
+.yellowdesign2{
+    top: 20%; 
+}
+.context{
+    position: absolute;
+    top: 2600px;
+    left:650px;
+    width:400px;
+} 
+
+.flexBox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+.flexBox>div{
+    width:400px;
+    margin-left: 40px;
+}
+.faq{
+    position: absolute;
+    top:3000px;
+}
+center{
+    position: absolute;
+    top:2400px;
+    left:50%;
+}
+.frame{
+    position: absolute;
+    top:3750px;
+    left: 30px;
+}
+.frame>img{
+    width: 1000px;
+height: 508px;
+top: 4776.71px;
+left: 175px;
+gap: 0px;
+border-radius: 8px 0px 0px 0px;
+opacity: 0px;
+padding-left: 90px;
+display: flex;
+justify-content: center;
+}
+
+.f-parent{
+    padding-top: 50px;
+}
+.faq>.g-parent{
+    position: relative;
+    height: 1000px;
+}
+.contact{
+    display: flex;
+    
+    justify-content: space-around;
+    position: absolute;
+    top:4300px;
+    left:150px;
+}
+.contact>div>ul>li{
+    list-style: none;
+}
+.contact>div>ul>li>input{
+    border: none;
+}
+.contact>div>ul>li>input:focus{
+    outline: none;
+}
+#button{
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px;
+}
+.footer{
+    position: relative;
+    top:4300px;
+    margin-top: 50px;
+}
